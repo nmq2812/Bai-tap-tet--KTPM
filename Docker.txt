@@ -1,0 +1,41 @@
+I. DOCKER VÀ DOCKER-COMPOSER
+1. Docker là gì ?
+	Docker là một nền tảng để cung cấp cách để building, deploying và running ứng dụng dễ dàng hơn bằng cách sử dụng các containers trên nền tảng ảo hóa.
+
+2. Docker-composer là gì ?
+	Docker compose là công cụ dùng để định nghĩa và run multi-container cho Docker application.
+
+	compose bạn sử dụng file YAML để config các services cho application của bạn. Sau đó dùng command để create và run từ những config đó. Sử dụng cũng khá đơn giản chỉ với ba bước:
+	- Khai báo app’s environment trong Dockerfile.
+	- Khai báo các services cần thiết để chạy application trong file docker-compose.yml.
+	- Run docker-compose up để start và run app.
+
+
+II. LINUX VS UNIX VS BSD & *NIX ? MACOS THUỘC LOẠI NÀO ?
+	- Unix: Là 1 hệ điều hành vô cùng nổi tiếng trên thế giới. Unix được thiết kế để hỗ trợ lập trình đa nhiệm và đa người dùng. Unix có nhiều biến thể như System V, BSD (Berkeley Software Distribution), Sun Solaris, và nhiều hệ điều hành khác. Unix có một số tiêu chuẩn và giao thức chung, như POSIX (Portable Operating System Interface).
+	- *nix (Unix-like/Unix-compatible): Là thuật ngữ để chỉ các hệ điều hành dựa trên Unix hoặc có tính chất tương tự Unix. nó bao gồm cả Unix, Linux và BSD
+	- BSD (Berkeley Software Distribution): Là một biến thể của Unix được phát triển bởi Đại học California, Berkeley. BSD bao gồm một loạt các phiên bản, bắt đầu từ BSD 1.x vào những năm 1970 và kế thừa nhiều phát triển từ Unix.
+	- Linux: Là một hạt nhân (kernel) hệ điều hành mã nguồn mở được phát triển bởi Linus Torvalds từ năm 1991. Nó lấy cảm hứng từ Unix và được thiết kế để hoạt động trên nhiều nền tảng phần cứng khác nhau.
+
+	- MacOS thuộc loại *nix vì MacOS là 1 hệ điều hành riêng có nguồn gốc và tính chất Unix-like được phát triển bởi Apple. Nó được xây dựng trên nền tảng của hạt nhân Darwin, một phiên bản từ mã nguồn mở của BSD và chia sẻ nhiều đặc điểm cơ bản với các hệ điều hành Unix khác như Linux và BSD. 
+
+
+III. ALPINE VS UTUNTU
+	Alpine và Ubuntu đều là các bản phân phối Linux phổ biến, nhưng có một số điểm khác biệt:
+
+	* Kích thước và cấu trúc của hệ thống:
+	- Alpine: Alpine Linux được thiết kế để có kích thước nhỏ và gọn gàng. Hệ điều hành này được tối ưu hóa để sử dụng ít tài nguyên hệ thống nhất có thể, nên thường được sử dụng trong các container Docker và các ứng dụng có yêu cầu về tài nguyên nhỏ.
+	- Ubuntu: Ubuntu thường có kích thước lớn hơn so với Alpine và cung cấp một loạt các gói và tính năng mở rộng. Nó được sử dụng rộng rãi cho cả máy tính cá nhân và máy chủ, với một loạt các phiên bản và biến thể như Ubuntu Server, Ubuntu Desktop và Ubuntu for IoT.
+
+	* Tính ổn định và cập nhật:
+	- Alpine: Alpine thường được coi là ổn định và cập nhật, nhưng do kích thước nhỏ và phạm vi sử dụng hẹp hơn nên có thể không có sự phong phú trong các tính năng hoặc bản cập nhật như Ubuntu.
+	- Ubuntu: Ubuntu cung cấp một cộng đồng lớn và tính năng cập nhật định kỳ, đồng thời cung cấp hỗ trợ lâu dài cho các phiên bản LTS (Long Term Support). Điều này làm cho Ubuntu phù hợp cho nhiều ứng dụng, từ máy tính cá nhân cho đến môi trường sản xuất máy chủ.
+
+	* Mục tiêu sử dụng:
+	- Alpine: Alpine thường được sử dụng trong các môi trường như container và hệ thống nhúng, nơi mà yêu cầu về kích thước và hiệu suất là ưu tiên hàng đầu.
+	- Ubuntu: Ubuntu được sử dụng rộng rãi trên nhiều môi trường khác nhau, từ máy tính cá nhân, máy chủ, đến các dự án phát triển phần mềm và công nghệ thông tin.
+
+
+IV. VNC (Virtual Network Computing)
+	VNC là một công nghệ cho phép kiểm soát và sử dụng một máy tính từ xa qua mạng Internet hoặc mạng cục bộ. VNC cho phép chúng ta truy cập vào một máy tính từ xa thông qua một ứng dụng hoặc trình duyệt web, giống như đang ngồi trước máy tính đó.
+	Công nghệ VNC hoạt động bằng cách chụp và truyền tải các hình ảnh của màn hình máy tính từ xa sang máy tính của ta, và sau đó chuyển đổi các lệnh chuột và bàn phím từ máy tính của ta sang máy tính từ xa. Điều này cho phép ta thực hiện các hoạt động như sửa đổi tập tin, cài đặt phần mềm, hoặc thậm chí điều khiển các ứng dụng từ xa mà không cần phải đến trực tiếp tại máy tính đó.
