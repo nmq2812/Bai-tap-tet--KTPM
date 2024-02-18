@@ -1,2 +1,2 @@
-# B-i-t-p-t-t---KTPM
+# Bài tập tết - KTPM
 Họ và tên: Nguyễn Minh Quân
